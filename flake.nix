@@ -30,6 +30,6 @@
         });
 
       defaultPackage = forAllSystems (system: self.packages.${system}.stopenocd);
-
+      overlays.default = self: super: import ./nixpkgs super.nixpkgs;
     };
 }
