@@ -19,8 +19,9 @@
               sha256 = "sha256-DBi2JwMs++etFrQHWFUnRfSzLofP0HGgHfhyiIJpQ0Q=";
               deepClone = true;
             });
-          nativeBuildInputs = [ gnumake automake autoconf which libtool git rsync];
+          nativeBuildInputs = [ gnumake automake autoconf which libusb1 libtool git rsync];
           buildInputs = [ pkg-config ];
+          configureFlags = [ "--enable-stlink" ];
           preConfigure = "sh ./bootstrap";
         };
       };
