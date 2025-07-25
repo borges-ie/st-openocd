@@ -16,7 +16,7 @@
           inherit version;
           src = (fetchgit {
               url = "https://github.com/STMicroelectronics/OpenOCD";
-              sha256 = "sha256-1ug2qVU9mE1dan7Vhdu+ECFahOxasVfobubwzEmIEIA=";
+              sha256 = "sha256-rSQF58HgCcWg6kqiwqT8E4zzMpcjqPO2Lw7s0fgjUXA=";
               deepClone = true;
             });
           nativeBuildInputs = [ gnumake automake autoconf which libusb1 libtool git rsync];
